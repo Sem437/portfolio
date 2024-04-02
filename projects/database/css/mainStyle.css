@@ -1,0 +1,51 @@
+
+body{
+    font-family: 'Raleway';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 2vh;
+}
+
+a:hover{
+    color: blue;
+}
+
+table{
+    border: 1px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: lightgray;
+    width: 5vw;
+}
+
+td{
+    width: 5vw;
+    text-align: center;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+i{
+    color: black;
+}
+
+i:hover{
+    color: lightgray;
+}

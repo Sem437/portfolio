@@ -1,0 +1,3 @@
+I have experience in the following programming langues: PHP, HTML, CSS, javascript, mySQL and C#. I also have experience with API's, AJAX and OOP. 
+
+My goal is to be a full-stack software developer 

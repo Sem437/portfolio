@@ -1,0 +1,202 @@
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    width: 100svw;
+    overflow: hidden;
+    font-family: 'Raleway';
+}
+
+form
+{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 20vw;
+}
+
+form h1
+{
+    margin-top: 40px;
+}
+
+.inputs
+{
+    padding: 10px;
+    width: 15vw;
+    margin-block-start: 20px;
+}
+
+#errorMessage
+{
+    color: red;
+    margin-top: 30px;
+}
+
+#footerForm
+{
+    // border: solid black 2px; 
+    height: 5vh;
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.knop
+{
+    height: 5vh;
+    width: 10vh;
+    color: black;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+}
+
+.knop:hover{
+    background-color: grey;
+    cursor: pointer;
+    border: solid 1px grey;
+    color: white;
+}
+
+#backBTN
+{
+    height: 5vh;
+    width: 10vh;
+    color: black;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    background-color: lightgray;
+    text-align: center;
+    text-decoration: none;
+}
+
+// Breedte
+$desktop: 1500px;
+$tablet: 720px;
+$mobile: 450px;
+
+@media screen and (max-width: $desktop) and (min-width: $tablet) 
+{
+    // body 
+    // {
+    //     background-color: paleturquoise;
+    // }
+
+    form 
+    {
+        width: 50vw;
+        height: 70vh;
+    }
+
+    .inputs 
+    {
+        width: 30vw;
+    }
+
+    #footerForm 
+    {
+        width: 50vw;
+        margin-top: 20vh;
+    }
+    
+}
+
+@media screen and (max-width: $tablet) and (min-width: $mobile) 
+{
+    body 
+    {
+        // background-color: lime;
+        overflow-y: scroll;
+    }
+
+    form 
+    {
+        width: 50vw;
+        height: 70vh;
+    }
+
+    .inputs
+     {
+        width: 30vw;
+    }
+
+    #footerForm 
+    {
+        width: 50vw;
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: $mobile) 
+{
+    body 
+    {
+        // background-color: red;
+        overflow-y: scroll;
+    }
+
+    form 
+    {
+        width: 60vw;
+        height: 90vh;
+    }
+
+    .inputs 
+    {
+        width: 40vw;
+    }
+
+    #errorMessage 
+    {
+        color: red;
+        margin-top: 5vh;
+    }
+
+    #footerForm 
+    {
+        width: 60vw;
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 930px) and (min-width: 400px)
+{
+    body 
+    {
+        // background-color: blue;
+        overflow-y: scroll;
+    }
+
+    form 
+    {
+        margin-top: 20vh;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .inputs 
+    {
+        width: 30vw;
+    }
+
+    #footerForm 
+    {
+        width: 50vw;
+        margin-block: 5vh;
+    }
+
+    .knop
+    {
+        background-color: lightgrey;
+        height: 5vh;
+        width: 25vh;
+    }
+}

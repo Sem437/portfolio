@@ -1,0 +1,150 @@
+$desktop: 1500px; 
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 480px;
+$BalkColor: rgba(13, 89, 114, 1);
+
+
+body{
+    font-family: 'Raleway';
+    overflow: hidden;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+#headText
+{
+    font-size: 60px;
+    color: rgb(13, 89, 114);
+}
+
+#LastLinkChild{
+    border-right: none;
+}
+
+ #head{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -8px;
+        margin-top: -8px;
+        height: 15svh;
+    }
+
+#nav
+{
+     background-color: $BalkColor;
+     margin-left: -8px;
+     height: 5svh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+}
+
+a
+{
+    border-right: 1px solid black;
+    text-decoration: none;
+    color: white;
+    width: 6vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover
+{
+    background-color: white;
+    color: rgb(13, 89, 114);
+ }
+
+ // main
+
+ #main{
+    height: 60svh;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainBorder{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main h2{
+    font-size: 4svh;
+    font-weight: 700;
+}
+
+#main h2:first-child{
+    margin-bottom: 5px;
+}
+
+
+/* footer */
+
+#balk{
+    background-color: rgb(13, 89, 114);;
+    margin-left: -8px;
+    height: 5svh;
+}
+
+#footer{
+    height: 15svh;
+    background-color: white;
+    margin-left: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#email{
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 1300px) and (min-width: $tablet)	
+{
+
+    a
+    {
+        width: 10vw;
+    }
+}
+
+@media screen and (max-width: $tablet) and (min-width: $mobile)	
+{
+    a
+    {
+        width: 17vw;
+    }
+    
+}
+
+@media screen and (max-width: $mobile)	
+{
+    a
+    {
+        height: 4.4vh;
+        width: 30vw;
+    }
+
+    #mainBorder h2
+    {
+        font-size: 2.5svh;
+    }
+    
+    #footer
+    {
+        height: 20svh;
+    }
+}
