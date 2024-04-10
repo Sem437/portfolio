@@ -6,6 +6,7 @@
     <title>About me</title>
     <link rel="stylesheet" href="../css/index.scss">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/content/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -17,9 +18,9 @@
         <a href="aboutMe.html">About me</a>
         <a href="../projects/index.html" id="LastLinkChild">Projects</a>
     </div>
-    <div id="main">
-      <div id="mainBorder">
-      
+    <div id="mainContent">
+      <div id="mainBorderContent">
+        <div id="outputText"></div>
       </div>
     </div>
     <div id="balk"></div>
@@ -27,7 +28,13 @@
       <div id="email">
         <p>  E-mail: 97103780@st.deltion.nl</p>
         <p><a href="https://github.com/Sem437/portfolio">See my code</a></p>
-       </div>
+      </div>
     </div>
+    <script src="../javascript/getText.js"></script>
+    <script>
+      getText("../text/aboutMe1.txt");
+      getText("../text/aboutMe2.txt");
+      getText("../text/aboutMe3.txt");
+    </script>
 </body>
 </html>

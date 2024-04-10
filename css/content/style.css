@@ -1,0 +1,26 @@
+#mainContent {
+  height: 60svh;
+  width: 100svw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainBorderContent {
+  width: 40vw;
+  height: 60vh;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#outputText {
+  text-align: center;
+  padding: 10px;
+  overflow-y: scroll;
+  height: 50vh;
+  width: 30vw;
+}/*# sourceMappingURL=style.css.map */

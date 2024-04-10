@@ -1,0 +1,5 @@
+The coding editor I use the most is Visual Studio Code, but I also have experience with Visual Studio Community. 
+I have completed one project with a fellow student. 
+
+We used Visual Studio Community, Git, and GitHub to collaborate. 
+We discussed our tasks using the Scrum method.

@@ -1,0 +1,30 @@
+
+#mainContent{
+    // border: solid 2px blue;
+    height: 60svh;
+    width: 100svw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainBorderContent{
+//   border: solid 2px red;
+  width: 40vw;
+  height: 60vh;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#outputText{
+    // border: solid lime;
+    text-align: center;
+    padding: 10px;
+    overflow-y: scroll;
+   height: 50vh;
+   width: 30vw;
+//    padding-top: 10vh;
+}
