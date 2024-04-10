@@ -1,49 +1,74 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100svh;
-    width: 100svw;
-    overflow: hidden;
-    font-family: "Raleway";
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  width: 100svw;
+  overflow: hidden;
+  font-family: "Raleway";
 }
 
-form{
-    /* border: solid green; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 20vh;
+form {
+  /* border: solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 20vh;
 }
 
-form div{
-    /* border: solid blue; */
-    height: 10vh;
+form div {
+  /* border: solid blue; */
+  height: 10vh;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form div div {
+  height: 5vh;
+}
+
+.knoppen {
+  height: 5vh;
+  width: 7vw;
+  color: black;
+  background-color: lightgrey;
+  border: solid 1px lightgray;
+  border-radius: 10px;
+}
+
+.knoppen:hover {
+  background-color: grey;
+  cursor: pointer;
+  border: solid 1px grey;
+  color: white;
+}
+
+@media screen and (max-width: 720px) and (min-width: 450px) {
+  body {
+    text-align: center;
+  }
+  form div {
+    width: 50vw;
+  }
+  .knoppen {
     width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
 }
-
-form div div{
-    /* border: solid green; */
-    height: 5vh;
-}
-
-.knoppen{
-    height: 5vh;
-    width: 5vw;
-    color: black;
-    background-color: lightgrey;
-    border: solid 1px lightgray;
-    border-radius: 10px;
-}
-
-.knoppen:hover{
-    background-color: grey;
-    cursor: pointer;
-    border: solid 1px grey;
-    color: white;
-}
+@media screen and (max-width: 450px) {
+  body {
+    overflow-y: scroll;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  form div {
+    width: 50vw;
+  }
+  .knoppen {
+    width: 20vw;
+  }
+}/*# sourceMappingURL=delete.css.map */

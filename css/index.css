@@ -55,7 +55,6 @@ a:hover {
   height: 60svh;
   width: 100svw;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -77,6 +76,45 @@ a:hover {
   margin-bottom: 5px;
 }
 
+.divsMain {
+  width: 33vw;
+  height: 60vh;
+}
+
+.divsMain:first-child {
+  margin-left: -40px;
+}
+
+#navBarProjects {
+  border-right: solid 3px rgb(13, 89, 114);
+  height: 60vh;
+  width: 8vw;
+}
+
+.linksDiv {
+  border-bottom: solid 3px rgb(13, 89, 114);
+  width: 7.6vw;
+  height: 6vh;
+  padding-left: 10px;
+}
+
+.linksDiv:hover {
+  background-color: rgb(13, 89, 114);
+  color: white;
+}
+
+#project1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#project2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 /* footer */
 #balk {
   background-color: rgb(13, 89, 114);
@@ -89,12 +127,30 @@ a:hover {
   background-color: white;
   margin-left: -8px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+#footer a {
+  color: black;
+  width: 100vw;
+}
+
+#footer p {
+  width: 100vw;
+  margin-block: 2px;
+  text-align: center;
+}
+
 #email {
-  margin-left: 8px;
+  margin-top: 5px;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 1300px) and (min-width: 768px) {
@@ -103,6 +159,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
+  #headText {
+    font-size: 40px;
+  }
   a {
     width: 17vw;
   }

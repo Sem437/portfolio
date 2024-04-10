@@ -7,35 +7,33 @@ class Conn
     private $dbUser;
     private $dbPass;
     private $dbName;
-    protected $pdo;
+    protected $conn;
 
    public function __construct()
    {
-       $this->dbINI = parse_ini_file("conn.ini");
-       $this->dbHost = $this->dbINI["host"];
-       $this->dbUser = $this->dbINI["username"];
-       $this->dbPass = $this->dbINI["password"];
-       $this->dbName = $this->dbINI["dbname"];
-   } 
+       $this->dbHost = ""; //mijn host
+       $this->dbUser = ""; //mijn gebruikersnaam
+       $this->dbPass = ""; //mijn wachtwoord
+       $this->dbName = ""; //mijn database
+   }
 
    public function connect()
    {
         try
        {
-           $conn = "mysql:host=$this->dbHost;dbname=$this->dbName";
-           $this->pdo = new PDO($conn, $this->dbUser, $this->dbPass);
-           $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-           return $this->pdo;
+           $this->conn = new PDO("mysql:host=$this->dbHost;dbname=$this->dbName", $this->dbUser, $this->dbPass);
+        //    echo "Connection successful";
+           return $this->conn;
        }
        catch(PDOException $e)
        {
-           $this->error = $e->getMessage();
+            throw new Exception("Connection failed: " . $e->getMessage());
        }
    }
 
    public function getPDO()
    {
-        return $this->pdo;
+        return $this->conn;
    }
 }
 

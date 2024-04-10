@@ -65,10 +65,10 @@ a:hover
  // main
 
  #main{
+    // border: solid lime;
     height: 60svh;
     width: 100svw;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -90,6 +90,48 @@ a:hover
     margin-bottom: 5px;
 }
 
+.divsMain{
+    // border: solid pink;
+    width: 33vw;
+    height: 60vh;
+}
+
+.divsMain:first-child{
+    margin-left: -40px;
+}
+
+#navBarProjects{ 
+    // border: solid green;
+    border-right: solid 3px $BalkColor;
+    height: 60vh;
+    width: 8vw;
+}
+
+.linksDiv{
+    // border: solid pink;
+    border-bottom: solid 3px $BalkColor;
+    width: 7.6vw;
+    height: 6vh;
+    padding-left: 10px;
+}
+
+.linksDiv:hover{
+    background-color: $BalkColor;
+    color: white;
+}
+
+#project1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#project2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+ 
 
 /* footer */
 
@@ -100,16 +142,40 @@ a:hover
 }
 
 #footer{
+    // border: solid red;
     height: 15svh;
     background-color: white;
     margin-left: -8px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+#footer a
+{
+    // border: solid red;
+    color: black;
+    // border: none;
+    width: 100vw;
+}
+
+#footer p
+{
+    // border: solid red;
+    width: 100vw;
+    margin-block: 2px;
+    text-align: center;
+}
+
 #email{
-    margin-left: 8px;
+    margin-top: 5px;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 1300px) and (min-width: $tablet)	
@@ -123,6 +189,10 @@ a:hover
 
 @media screen and (max-width: $tablet) and (min-width: $mobile)	
 {
+    #headText
+    {
+        font-size: 40px;
+    }
     a
     {
         width: 17vw;
@@ -132,6 +202,7 @@ a:hover
 
 @media screen and (max-width: $mobile)	
 {
+
     a
     {
         height: 4.4vh;

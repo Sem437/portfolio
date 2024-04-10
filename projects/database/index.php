@@ -21,10 +21,10 @@ include "conn/showData.php";
         $pdo = $database->connect();
         
         $getAllData = new getAllData();
-        $data = $getAllData->fetchData();
+        $stmt = $getAllData->fetchData();
         
         $dt = new showData();
-        echo $dt->displayData($data);
+        echo $dt->displayData($stmt);
     ?>
 </body>
 </html>

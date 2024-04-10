@@ -5,7 +5,7 @@ class showData extends getAllData
 
     private $htmlTable;
 
-    public function displayData($data)
+    public function displayData($stmt)
     {
         $htmlTable = "<table>" . 
         "<tr><th>ID</th>" .
@@ -16,20 +16,19 @@ class showData extends getAllData
         "<th>Edit</th>" .
         "</tr>";
 
-        foreach($data as $row) 
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC))	
         {
-            $htmlTable .=
-            "<tr><td>" . $row['id'] . "</td><td>" . 
-            $row['firstname'] . "</td><td>" . 
-            $row['lastname'] . "</td><td>" . 
-            $row['age'] . "</td>" . 
-            "<td id='delete'><a href='../database/delete/index.php?id=" . $row['id'] . "'>  <i class='fas fa-trash'>     </i> </a></td>" .
-            "<td id='update'><a href='../database/update/index.php?id=" . $row['id'] . "'>  <i class='fas fa-user-edit'> </i> </a></td>" .
-            
-            "</tr>";
+            $htmlTable .= "<tr>" .
+            "<td>" . $row["id"] . "</td>" .
+            "<td>" . $row["firstname"] . "</td>" .
+            "<td>" . $row["lastname"] . "</td>" .
+            "<td>" . $row["age"] . "</td>" .
+            "<td><a href='delete/index.php?id=" . $row["id"] . "'>Delete</a></td>" .
+            "<td><a href='update/index.php?id=" . $row["id"] . "'>Edit</a></td>";
         }
 
         $htmlTable .= "</table>";
         return $htmlTable;
     }
 }
+?>
