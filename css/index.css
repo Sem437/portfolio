@@ -77,29 +77,20 @@ a:hover {
 }
 
 .divsMain {
+  border:   solid 3px rgb(13, 89, 114);
   width: 33vw;
   height: 60vh;
 }
 
-.divsMain:first-child {
-  margin-left: -40px;
-}
-
-#navBarProjects {
-  border-right: solid 3px rgb(13, 89, 114);
-  height: 60vh;
-  width: 8vw;
-}
-
 .linksDiv {
-  border-bottom: solid 3px rgb(13, 89, 114);
   width: 7.6vw;
   height: 6vh;
   padding-left: 10px;
 }
 
 .linksDiv:hover {
-  background-color: rgb(13, 89, 114);
+  /* background-color: rgb(13, 89, 114); */
+  background-color: transparent;
   color: white;
 }
 
