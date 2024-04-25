@@ -1,0 +1,3 @@
+Currently, I am learning the ASP.NET framework of C#.
+I am interested in learning other frameworks like Laravel (I have made a couple of projects with Laravel).
+My goal is to learn C#, the ASP.NET framework, and to become a C# developer.

@@ -1,2 +1,2 @@
 I have experience in the following programming languages: PHP, HTML, CSS, JavaScript, MySQL, and C#. Additionally, 
-I have experience with APIs, AJAX, and OOP. My goal is to become a full-stack software developer.
+I have experience with APIs, AJAX, and OOP.
