@@ -33,6 +33,10 @@
                     <div>
                         <input type="submit" name="login" id="login" value="Login">
                     </div>
+                    <div>
+                        <a class="linkies" href="passwordReset.php">Forgot password?</a>
+                        <a class="linkies" href="aanmaken/index.php">Don't have an account yet?</a>
+                    </div>
                 </form>
             </div>
       </div>
